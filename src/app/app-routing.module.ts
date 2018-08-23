@@ -9,17 +9,19 @@ import { ResumeComponent } from './resume/resume.component';
 import { AccomplishmentsComponent } from './accomplishments/accomplishments.component';
 
 const routes: Routes = [
-  {path: "",  redirectTo: "/home", pathMatch: "full" },
   {path: "home", component: HomeComponent },
   {path: "resume", component: ResumeComponent},
   {path: "work experience", component: WorkExperienceComponent},
   {path: "education", component: EducationComponent},
   {path: "accomplishments", component: AccomplishmentsComponent},
+  {path: "",  redirectTo: "/home", pathMatch: "full" },
   {path: "**", component: PageNotFoundComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes)
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccomplishmentsComponent implements OnInit {
 
+  footerQuote:string[] = ["A great accomplishment shouldn't be the end of the road,", "just the starting point for the next leap forward."];
+  footerAuthor:string = "Harvey Mackay";
+
   constructor() { }
 
   ngOnInit() {

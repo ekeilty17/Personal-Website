@@ -25,3 +25,7 @@
     font-size: 30px;
     /*background-color: rgba(255, 255, 255, 0.8); /* used to see grid */
 }
+
+img {
+    border-radius: 1%;
+}
