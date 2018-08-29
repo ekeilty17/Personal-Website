@@ -1,9 +1,9 @@
 
-.picture { grid-area: picture; align-self: center;}
-.header { grid-area: header;}
-.drop-down { grid-area: drop-down; background-color: rgba(5, 28, 104, 0.8); margin-left: -10px; margin-right: -10px;}
+.picture { grid-area: picture; margin: -10px;}
+.header { grid-area: header; margin: -10px;}
+.drop-down { grid-area: drop-down; background-color: var(--primary-blue); margin-left: -10px; margin-right: -10px;}
 .main { grid-area: main; margin-left: 32px; margin-right: 32px;}
-.footer { grid-area: footer; background-color: rgba(5, 28, 104, 0.8); margin-bottom: -10px; margin-left: -10px; margin-right: -10px;}
+.footer { grid-area: footer; background-color: var(--primary-blue); margin-bottom: -10px; margin-left: -10px; margin-right: -10px;}
 
 .grid-container {
     display: grid;
@@ -27,5 +27,7 @@
 }
 
 img {
-    border-radius: 1%;
+    border-radius: 6%;
+    align-self: center;
+    padding: 15px;
 }
