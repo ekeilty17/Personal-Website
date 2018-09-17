@@ -1,11 +1,94 @@
-h1 {
-    font-weight: bold;
+/* Main Grid */
+.education-header { grid-area: education-header; text-align: right!important; }
+.education-main { grid-area: education-main; }
+.work-experience-header { grid-area: work-experience-header; text-align: right!important; }
+.work-experience-main { grid-area: work-experience-main; }
+.skills-header { grid-area: skills-header; text-align: right!important; }
+.skills-main { grid-area: skills-main; }
+.references-header { grid-area: references-header; text-align: right!important; }
+.references-main { grid-area: references-main; }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:
+        'education-header       .                   '
+        'education-main         education-main      '
+        'work-experience-header .                   '
+        'work-experience-main   work-experience-main'
+        'skills-header          .                   '
+        'skills-main            skills-main         '
+        'references-header      .                   '
+        'references-main        references-main     ';
+    row-gap: 0px;
+    column-gap: 64px;
+    padding: 10px;
 }
 
-h2 {
+.grid-container > div {
+    text-align: justify;
+    padding: 0px 0;
+    font-size: 30px;
+}
+
+/* Sub Grids */
+.box1-date { grid-area: box1-date; text-align: right!important; }
+.box1-main { grid-area: box1-main; }
+.box2-date { grid-area: box2-date; text-align: right!important; }
+.box2-main { grid-area: box2-main; }
+.box3-date { grid-area: box3-date; text-align: right!important; }
+.box3-main { grid-area: box3-main; }
+
+.subgrid-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:
+        'box1-date  box1-main'
+        'box2-date  box2-main'
+        'box3-date  box3-main';
+    row-gap: 10px;
+    column-gap: 64px;
+    padding: 10px;
+}
+
+.subgrid-container > div {
+    text-align: justify;
+    padding: 0px 0;
+    font-size: 14px;
+}
+
+.subtext {
+    font-style: italic;
     font-weight: bold;
+    font-size: 12px;
+    color: var(--primary-blue);
+    opacity: 0.8;
+}
+
+.sidetext {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 12px;
+    color: black;
+    opacity: 0.5;
+}
+
+/* Formatting */
+h1, h2, h3, h4 {
+    font-weight: bold;
+    color: var(--primary-blue);
 }
 
 p {
-    font-size: 18px;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cols-3 > ul {
+    margin-top: 0px;
+    column-count: 3;
+    column-fill: balance;
 }

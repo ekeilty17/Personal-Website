@@ -6,14 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Eric Keilty';
-
+  
   routes = [
-    { linkName: 'Home', url: 'home'},
-    { linkName: 'About', url: 'about'},
-    { linkName: 'Work Experience', url: 'work experience'},
-    { linkName: 'Education', url: 'education'},
-    { linkName: 'Contact', url: 'contact'}
+    { linkName: 'Home', url: 'home' },
+    { linkName: 'About', url: 'about' },
+    { linkName: 'Work Experience', url: 'work experience' },
+    { linkName: 'Education', url: 'education' },
+    { linkName: 'Accomplishments', url: 'accomplishments' }
   ]
 
 }

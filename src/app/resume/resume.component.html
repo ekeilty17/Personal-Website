@@ -1,13 +1,15 @@
-<body class="light-grey text-black boarder">
+<body class="text-black boarder">
   <div class="grid-container">
     <div class="drop-down">
       <app-drop-down></app-drop-down>
     </div>  
-    <div class="main justify">
-      <app-main-resume></app-main-resume>
+    <div class="main justify white">
+      <div class="padding-main-resume" id="resume">
+        <app-main-resume></app-main-resume>
+      </div>
     </div>
     <div class="footer text-white">
-      footer
+      <button (click)="downloadPDF()">Download</button>
     </div>
   </div>
 </body>

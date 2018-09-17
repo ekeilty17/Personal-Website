@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -11,15 +13,12 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
 import { EducationComponent } from './education/education.component';
 import { MainWorkExperienceComponent } from './work-experience/main-work-experience/main-work-experience.component';
 import { MainEducationComponent } from './education/main-education/main-education.component';
-import { FooterWorkExperienceComponent } from './work-experience/footer-work-experience/footer-work-experience.component';
-import { FooterEducationComponent } from './education/footer-education/footer-education.component';
-import { FooterHomeComponent } from './home/footer-home/footer-home.component';
 import { ResumeComponent } from './resume/resume.component';
 import { HeaderHomeComponent } from './home/header-home/header-home.component';
 import { MainResumeComponent } from './resume/main-resume/main-resume.component';
 import { AccomplishmentsComponent } from './accomplishments/accomplishments.component';
 import { MainAccomplishmentsComponent } from './accomplishments/main-accomplishments/main-accomplishments.component';
-import { FooterAccomplishmentsComponent } from './accomplishments/footer-accomplishments/footer-accomplishments.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -32,19 +31,17 @@ import { FooterAccomplishmentsComponent } from './accomplishments/footer-accompl
     EducationComponent,
     MainWorkExperienceComponent,
     MainEducationComponent,
-    FooterWorkExperienceComponent,
-    FooterEducationComponent,
-    FooterHomeComponent,
     ResumeComponent,
     HeaderHomeComponent,
     MainResumeComponent,
     AccomplishmentsComponent,
     MainAccomplishmentsComponent,
-    FooterAccomplishmentsComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxPageScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,12 +1,10 @@
 <body class="light-grey text-black boarder">
   <div class="grid-container margin-top">
     
-    <div class="picture">
-      <div class="left-align">
-        <img src="assets/avatar_hat.jpg" width="300" height="300">
-      </div>
+    <div class="picture grey">
+      <img src="assets/HeadShot.jpg" width="230" height="300">
     </div>
-    <div class="header">
+    <div class="header grey">
       <app-header-home></app-header-home>
     </div>
 
@@ -19,7 +17,8 @@
     </div>
 
     <div class="footer">
-      <app-footer-home></app-footer-home>
+      <app-footer [quote]="footerQuote" [author]="footerAuthor"></app-footer>
     </div>
+
   </div>
 </body>

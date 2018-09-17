@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkExperienceComponent implements OnInit {
 
+  footerQuote:string[] = ["If it is broken, fix it. If you don't like it, change it. And if you want something, take it.", "Don't complain about it. Do something about it."];
+  footerAuthor:string = "Casey Neistat";
+
   constructor() { }
 
   ngOnInit() {

@@ -1,17 +1,16 @@
-.drop-down { grid-area: drop-down; background-color: rgba(5, 28, 104, 0.8); margin-left: -10px; margin-right: -10px;}
-.main { grid-area: main; margin-left: 32px; margin-right: 32px;}
-.footer { grid-area: footer; background-color: rgba(5, 28, 104, 0.8); margin-bottom: -10px; margin-left: -10px; margin-right: -10px;}
+.drop-down { grid-area: drop-down; background-color: var(--primary-blue); margin-left: -10px; margin-right: -10px;}
+.main { grid-area: main; margin: 16px; box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);}
+.footer { grid-area: footer; background-color: var(--primary-blue); margin-bottom: -20px; margin-left: -10px; margin-right: -10px;}
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     /* grid-auto-rows: minmax(100px, auto); */
     grid-template-areas:
-        'drop-down drop-down drop-down drop-down drop-down'
-        'main main main main main'
-        'footer footer footer footer footer';
+        'drop-down'
+        'main'
+        'footer';
     grid-gap: 10px;
-    /*background-color: #2196F3;*/
     padding: 10px;
 }
 
@@ -20,4 +19,11 @@
     padding: 0px 0;
     font-size: 30px;
     /*background-color: rgba(255, 255, 255, 0.8); /* used to see grid */
+}
+
+.padding-main-resume {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
 }

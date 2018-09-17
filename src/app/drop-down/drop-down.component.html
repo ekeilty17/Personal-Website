@@ -6,17 +6,21 @@
         <a href="/resume">Resumé</a>
     </button>
     <div class="dropdown">
-      <button class="dropbtn">Work Experience</button>
+      <button class="dropbtn">
+          <a href="/work experience">Work Experience</a>
+      </button>
       <div class="dropdown-content">
-        <a href="/work experience">DNAstack</a>
-        <a href="/work experience">UNH</a>
+        <a pageScroll [pageScrollDuration]="0" [routerLink]="['/work experience']" href="#dnastack">DNAstack</a>
+        <a pageScroll [pageScrollDuration]="0" [routerLink]="['/work experience']" href="#unh">UNH</a>
       </div>
     </div>
     <div class="dropdown">
-      <button class="dropbtn">Education</button>
+        <button class="dropbtn">
+          <a href="/education">Education</a>
+        </button>
       <div class="dropdown-content">
-        <a href="/education">University</a>
-        <a href="/education">Highschool</a>
+        <a pageScroll [pageScrollDuration]="0" [routerLink]="['/education']" href="#university">University</a>
+        <a pageScroll [pageScrollDuration]="0" [routerLink]="['/education']" href="#highschool">Highschool</a>
       </div>
     </div>
     <button class="dropbtn">

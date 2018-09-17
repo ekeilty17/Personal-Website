@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+
+  footerQuote:string[] = ["If you want to always be right,", "you need to always be prepared to change your mind."];
+  footerAuthor:string = "CGP Grey";
+  
   constructor() { }
 
   ngOnInit() {
