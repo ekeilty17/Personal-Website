@@ -4,4 +4,13 @@ A Personal Website for myself that I built from scratch using the [Angular CLI](
 
 ## Development server
 
-Run `ng serve` in the application directory for a development server. Navigate to http://localhost:4200/.
+This application requires Node.js. Download this from [https://nodejs.org/en/download/](https://nodejs.org/en/download/).
+
+```
+npm install -g @angular/cli
+git clone <project>
+cd Personal-Website
+ng serve
+```
+
+Navigate to http://localhost:4200/.
